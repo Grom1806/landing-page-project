@@ -1,0 +1,73 @@
+/* Box sizing border-box для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Удаляем стандартные стили ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стандартный outline у фокусируемых элементов, но оставляем доступность */
+*:focus {
+  outline: none;
+}
+
+/* Базовые стили для body */
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем списочные стили */
+ul, ol {
+  list-style: none;
+}
+
+/* Обнуляем стили заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+/* Сбрасываем стили таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* Обнуляем стили изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Убираем обводку кнопок и задаем базовые стили */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Сбрасываем стили для input, textarea и select */
+input, textarea, select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Глобальный сброс flex и grid gap */
+* {
+  gap: 0;
+}
